@@ -20,3 +20,18 @@ assert type(flag) == bool
 y = b'oo'    # this is a byte array
 assert isinstance(y, bytes)
 assert type(y) == bytes
+
+
+# convert numbers to strings:
+x = 123.123
+x = str(x)
+
+# convert strings to numbers
+x = '12'
+y = '14'
+z = int(x) + int(y)
+z = str(z)
+
+# convert integers to booleans
+assert bool(1) is True
+assert bool(0) is False
