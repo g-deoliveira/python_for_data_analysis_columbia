@@ -25,9 +25,11 @@ print('Don\'t you worry,it\'s going to be okay.')
 
 # this means if you try to print a backslash, you need to
 # escape it
-print('This is not going to work: \') # a SyntaxError occurs
+print('The single backslash here generates a SyntaxError: \')
 print('This is going to work: \\') # the backslash is escaped
 
 # the newline \n and tab \t characters:
 print('Linebreak:\nNew line\ttab')
+print('\t1')
+print('\t2')
 
