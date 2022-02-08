@@ -35,3 +35,8 @@ z = str(z)
 # convert integers to booleans
 assert bool(1) is True
 assert bool(0) is False
+
+# this conversion will generate a ValueError
+# because you can't represent 'abc' as a number
+x = 'abc'
+y = int(x)
