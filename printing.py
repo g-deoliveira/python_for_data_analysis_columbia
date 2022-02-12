@@ -23,6 +23,9 @@ print("Don't you worry,it's going to be okay.")
 print("And then he said, \"Hello!!\"")
 print('Don\'t you worry,it\'s going to be okay.')
 
+# this prints a single quote
+print('\'')
+
 # this means if you try to print a backslash, you need to
 # escape it
 print('The single backslash here generates a SyntaxError: \')
