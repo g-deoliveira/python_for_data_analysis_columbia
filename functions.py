@@ -9,11 +9,22 @@ def display_hello():
     '''
     print('hello 1')
 
-
 result = display_hello()
 assert result is None
 
 
+def display_hello2():
+    '''
+    This function:
+    - takes no input arguments
+    - prints "hello 1" to the screen
+    - returns None (explicitly)
+    '''
+    print('hello 1')
+    return None
+
+result = display_hello2()
+assert result is None
 
 
 def display_text(text):
