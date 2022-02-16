@@ -32,13 +32,14 @@ def display_text(text):
     This function:
     - takes 1 input argument: text
     - prints the input to the screen
-    - returns None (implicitly)
+    - returns the input without modification
     '''
     print(text)
+    return text
 
 value = 'This is a string!!'
 result = display_text(value)
-assert result is None
+assert result == value
 
 
 def display_text_n_times(text, n):
@@ -46,15 +47,16 @@ def display_text_n_times(text, n):
     This function:
     - takes 2 input arguments: text and n
     - prints the input to the screen, n times
-    - returns None (implicitly)
+    - returns the input without modification
     '''
     for k in range(n):
         print(text)
+    return text, n
 
 n = 3
 value = 'This string is going to be repeated 3 times'
 result = display_text_n_times(value, n)
-assert result is None
+assert result == (value, n)
 
 
 def display_text_n_times_with_default(text, n=1):
