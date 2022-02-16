@@ -17,10 +17,10 @@ def display_hello2():
     '''
     This function:
     - takes no input arguments
-    - prints "hello 1" to the screen
+    - prints "hello 2" to the screen
     - returns None (explicitly)
     '''
-    print('hello 1')
+    print('hello 2')
     return None
 
 result = display_hello2()
