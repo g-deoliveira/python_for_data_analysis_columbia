@@ -20,14 +20,21 @@ print(quote)
 
 # triple quotes wrap text over multiple lines
 # and preserve the line breaks
-triple = """
-select *
+triple = """select *
 from employees
 where employee_id = 123
 """
-assert triple == '\nselect *\nfrom employees\nwhere employee_id = 123\n'
+assert triple == 'select *\nfrom employees\nwhere employee_id = 123\n'
 
 # alternatively, use the line break
 query = 'select *\nfrom employees\nwhere employee_id = 123\n'
 assert query == triple
 
+# accessing characters via indexing and slicing:
+pets = "dogs, birds, fish, cats"
+
+assert pets[0] == 'd'
+assert pets[:3] == 'dog'
+assert pets[-3:] =='ats'
+assert pets[0:8:2] == 'dg,b'
+assert pets[::-1] == 'stac ,hsif ,sdrib ,sgod'
