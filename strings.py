@@ -53,3 +53,34 @@ assert "abc" + 'def' == 'abcdef'
 
 # repetition
 assert "abc" * 3 == "abcabcabc"
+
+# built-in methods that transform
+text = " Hello how are you? "
+
+assert text.lower() == ' hello how are you? '
+assert text.upper() == ' HELLO HOW ARE YOU? '
+# remove leading spaces
+assert text.lstrip() == "Hello how are you? "
+# remove trailoing spaces
+assert text.rstrip() == " Hello how are you?"
+# remove leading and trailing spaces
+assert text.strip() == "Hello how are you?"
+
+# fill in with 0s (useful for zip codes for instance)
+zip_code = '123'
+assert zip_code.zfill(5) == '00123'
+
+# boolean questions
+address = '123 Main St. Apt 100'
+assert address.startswith('123 Main')
+assert address.endswith('Apt 100')
+
+street_number = address[:3]
+assert street_number == '123'
+isalpha = street_number.isalpha()
+assert not isalpha
+
+isnumeric = street_number.isnumeric()
+assert isnumeric
+
+
