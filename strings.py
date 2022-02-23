@@ -34,7 +34,22 @@ assert query == triple
 pets = "dogs, birds, fish, cats"
 
 assert pets[0] == 'd'
+assert pets[-1] == 's'
 assert pets[:3] == 'dog'
 assert pets[-3:] =='ats'
 assert pets[0:8:2] == 'dg,b'
 assert pets[::-1] == 'stac ,hsif ,sdrib ,sgod'
+
+assert len(pets) == 23
+
+assert "dog" in pets
+assert "horse" not in pets
+
+assert max(pets) == "t"
+assert min(pets) == " "
+
+# concatenation
+assert "abc" + 'def' == 'abcdef'
+
+# repetition
+assert "abc" * 3 == "abcabcabc"
