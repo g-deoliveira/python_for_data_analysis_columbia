@@ -108,14 +108,9 @@ old = "dog"
 new = "Labrado"
 text.replace(old, new) == "They have one Labrador, one cat and four fish."
 
-# note since strings are immutable, if you try to replace
-# substrings using indices and slicing, you'll generate
-# a TypeError:
-# text[14:17] = "DOG"
-
 # chaining string methods together
 text = "   Hello how are you?"
 
-assert not text.startswith("Hello")
-assert text.startswith("   Hello")
 assert text.strip().startswith("Hello")
+assert text.strip().upper() == "HELLO"
+
