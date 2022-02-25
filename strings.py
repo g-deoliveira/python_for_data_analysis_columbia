@@ -84,7 +84,7 @@ isnumeric = street_number.isnumeric()
 assert isnumeric
 
 
-# methods that work with substrings
+# built-in methods that work with substrings
 text = "They have one dog, one cat and four fish."
 
 assert text.count("one") == 2
