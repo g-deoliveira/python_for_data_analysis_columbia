@@ -90,12 +90,12 @@ text = "They have one dog, one cat and four fish."
 assert text.count("one") == 2
 
 # if the substring is not found, find returns -1
-# otherwise it returns the index
+# otherwise it returns the index of the substring
 assert text.find("one") == 10
 assert text.find("two") == -1
 
 # if the substring is not found, index raises
-# a a ValueError, otherwise it returns the index
+# a ValueError, otherwise it returns the index
 assert text.index("one") == 10
 try:
     two = text.index("two")
@@ -112,5 +112,5 @@ text.replace(old, new) == "They have one Labrador, one cat and four fish."
 text = "   Hello how are you?"
 
 assert text.strip().startswith("Hello")
-assert text.strip().upper() == "HELLO"
+assert text.strip().upper()[:5] == "HELLO"
 
