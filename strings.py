@@ -84,3 +84,38 @@ isnumeric = street_number.isnumeric()
 assert isnumeric
 
 
+# methods that work with substrings
+text = "They have one dog, one cat and four fish."
+
+assert text.count("one") == 2
+
+# if the substring is not found, find returns -1
+# otherwise it returns the index
+assert text.find("one") == 10
+assert text.find("two") == -1
+
+# if the substring is not found, index raises
+# a a ValueError, otherwise it returns the index
+assert text.index("one") == 10
+try:
+    two = text.index("two")
+except ValueError as ve:
+    print(ve)
+    assert str(ve) == "substring not found"
+
+# replace(old, new): replace old with new
+old = "dog"
+new = "Labrado"
+text.replace(old, new) == "They have one Labrador, one cat and four fish."
+
+# note since strings are immutable, if you try to replace
+# substrings using indices and slicing, you'll generate
+# a TypeError:
+# text[14:17] = "DOG"
+
+# chaining string methods together
+text = "   Hello how are you?"
+
+assert not text.startswith("Hello")
+assert text.startswith("   Hello")
+assert text.strip().startswith("Hello")
