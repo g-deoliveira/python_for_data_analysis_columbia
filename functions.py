@@ -1,98 +1,79 @@
 
 
-def display_hello():
-    '''
-    This function:
-    - takes no input arguments
-    - prints "hello 1" to the screen
-    - returns None (implicitly)
-    '''
-    print('hello 1')
+def print_hello1():
+    # This function:
+    #    takes no input arguments
+    #    returns None (implicitly)
+    print('hello1')
 
-result = display_hello()
+result = print_hello1()
 assert result is None
 
 
-def display_hello2():
-    '''
-    This function:
-    - takes no input arguments
-    - prints "hello 2" to the screen
-    - returns None (explicitly)
-    '''
-    print('hello 2')
+def print_hello2():
+    # This function:
+    #    takes no input arguments
+    #    returns None (explicitly)
+    print('hello2')
     return None
 
-result = display_hello2()
+result = print_hello2()
 assert result is None
 
 
-def display_text(text):
-    '''
-    This function:
-    - takes 1 input argument: text
-    - prints the input to the screen
-    - returns the input without modification
-    '''
+def print_text(text):
+    # This function:
+    #    takes 1 input argument: text
+    #    returns the input value
     print(text)
     return text
 
 value = 'This is a string!!'
-result = display_text(value)
+result = print_text(value)
 assert result == value
 
 
-def display_text_n_times(text, n):
-    '''
-    This function:
-    - takes 2 input arguments: text and n
-    - prints the input to the screen, n times
-    - returns the input without modification
-    '''
+def print_text_n_times(text, n):
+    # This function:
+    #    takes 2 input arguments: text and n
+    #    prints the input to the screen, n times
+    #    returns the input without modification
     for k in range(n):
         print(text)
     return text, n
 
 n = 3
 value = 'This string is going to be repeated 3 times'
-result = display_text_n_times(value, n)
+result = print_text_n_times(value, n)
 assert result == (value, n)
 
 
-def display_text_n_times_with_default(text, n=1):
-    '''
-    This function:
-    - takes 2 input arguments: text and n
-    - n has a default value of 1
-    - prints the input to the screen, n times
-    - returns None (implicitly)
-    '''
+def print_text_n_times_with_default(text, n=1):
+    # This function:
+    #    takes 2 input arguments: text and n
+    #    n has a default value of 1
+    #    prints the input to the screen, n times
     for k in range(n):
         print(text)
 
 value = 'This string is NOT going to be repeated'
-result = display_text_n_times_with_default(value)
+result = print_text_n_times_with_default(value)
 assert result is None
 
 
 def using_named_input_args(x=1, y=2, z=3):
-    '''
-    This example demonstrates how you can
-    pass arguments to functions.
-    It displays the input values
-    and returns (x + y) * z
-    '''
+
     print(f'x={x} y={y} z={z}')
     return (x + y) * z
 
 # calling the function without inputs
-assert using_named_input_args() == 9, 'Failure 1 here'
+assert using_named_input_args() == 9
 
-# here I am going to pass different values
-assert using_named_input_args(3,2,1) == 5, 'Failure 2 here'
+# now the order of the input arguments is reversed
+assert using_named_input_args(3,2,1) == 5
 
-# here I am going to pass in named arguments but in different order
-assert using_named_input_args(z=3, y=2, x=1) == 9, 'Failure 3 here'
+# pass the input arguments by name
+assert using_named_input_args(z=3, y=2, x=1) == 9
 
 
 # note when setting up default arguments for a function,
