@@ -28,7 +28,7 @@ assert result == value
 
 
 def print_text_n_times(text, n):
-    # print_text_n_times takes 2 input arguments and returns both of them
+
     for k in range(n):
         print(text)
     return text, n
