@@ -1,9 +1,7 @@
 
 
 def print_hello1():
-    # This function:
-    #    takes no input arguments
-    #    returns None (implicitly)
+    # print_hello1 returns None (implicitly)
     print('hello1')
 
 result = print_hello1()
@@ -11,9 +9,7 @@ assert result is None
 
 
 def print_hello2():
-    # This function:
-    #    takes no input arguments
-    #    returns None (explicitly)
+    # print_hello2 returns None (explicitly)
     print('hello2')
     return None
 
@@ -22,9 +18,7 @@ assert result is None
 
 
 def print_text(text):
-    # This function:
-    #    takes 1 input argument: text
-    #    returns the input value
+    # print_text takes 1 input argument
     print(text)
     return text
 
@@ -34,25 +28,19 @@ assert result == value
 
 
 def print_text_n_times(text, n):
-    # This function:
-    #    takes 2 input arguments: text and n
-    #    prints the input to the screen, n times
-    #    returns the input without modification
+    # print_text_n_times takes 2 input arguments and returns both of them
     for k in range(n):
         print(text)
     return text, n
 
 n = 3
-value = 'This string is going to be repeated 3 times'
+value = 'This string is going to be repeated'
 result = print_text_n_times(value, n)
 assert result == (value, n)
 
 
 def print_text_n_times_with_default(text, n=1):
-    # This function:
-    #    takes 2 input arguments: text and n
-    #    n has a default value of 1
-    #    prints the input to the screen, n times
+    # n has a default value of 1
     for k in range(n):
         print(text)
 
