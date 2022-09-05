@@ -1,17 +1,16 @@
-
-# Empty print statement prints an empty line
-print()
-
-# You can print variables using the print function
+# The print function is a built-in Python function
+# that displays the input to the "text stream"
 print('Hello World.')
 
-# you can pass an unlimited number of comma-separated
+# You can pass an unlimited number of comma-separated
 # arguments (of different types) to the print function
 x = 123.0
 y = False
 z = 'wow'
 print('hello', x, y, z, +1, -2, 'goodbye')
 
+# Empty print statement prints an empty line
+print()
 
 # If you want to print quotes, you simply surround
 # single quotes by double quotes or vice-versa
