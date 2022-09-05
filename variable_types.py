@@ -25,12 +25,14 @@ assert type(y) == bytes
 # type cast numbers to strings:
 x = 123.123
 x = str(x)
+assert isinstance(x, str)
 
 # type cast strings to numbers
 x = '12'
 y = '14'
 z = int(x) + int(y)
 z = str(z)
+assert isinstance(z, str)
 
 # type cast integers to booleans
 assert bool(1) is True
