@@ -17,21 +17,14 @@ print()
 print('And then he said, "No soup for you!!"')
 print("Don't worry, it's going to be okay.")
 
-# alternatively you can the backslash escape character for
-# single quotes (or double quotes):
-print("And then he said, \"Hello!!\"")
-print('Don\'t you worry,it\'s going to be okay.')
+# You can the escape single and double quotes
+print("The name of the song is \"Don't worry, be happy!!\"")
 
 # this prints a single quote
 print('\'')
 
-# this means if you try to print a backslash, you need to
-# escape it
-print('The single backslash here generates a SyntaxError: \')
-print('This is going to work: \\') # the backslash is escaped
-
 # the newline \n and tab \t characters:
 print('Linebreak:\nNew line\ttab')
-print('\t1')
+print('\t1\t2\t3')
 print('\t2')
 
