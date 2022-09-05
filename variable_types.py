@@ -22,21 +22,21 @@ assert isinstance(y, bytes)
 assert type(y) == bytes
 
 
-# convert numbers to strings:
+# type cast numbers to strings:
 x = 123.123
 x = str(x)
 
-# convert strings to numbers
+# type cast strings to numbers
 x = '12'
 y = '14'
 z = int(x) + int(y)
 z = str(z)
 
-# convert integers to booleans
+# type cast integers to booleans
 assert bool(1) is True
 assert bool(0) is False
 
-# this conversion will generate a ValueError
+# this type cast will generate a ValueError
 # because you can't represent 'abc' as a number
 x = 'abc'
 y = int(x)
