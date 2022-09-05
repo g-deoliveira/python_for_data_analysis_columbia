@@ -5,18 +5,18 @@ print()
 # You can print variables using the print function
 print('Hello World.')
 
-# you can pass unlimited number of arguments
-# (of different types) to the print function
+# you can pass an unlimited number of comma-separated
+# arguments (of different types) to the print function
 x = 123.0
 y = False
 z = 'wow'
-print('hello', x, y, z, 'goodbye')
+print('hello', x, y, z, +1, -2, 'goodbye')
 
 
 # If you want to print quotes, you simply surround
 # single quotes by double quotes or vice-versa
-print('And then he said, "Hello!!"')
-print("Don't you worry,it's going to be okay.")
+print('And then he said, "No soup for you!!"')
+print("Don't worry, it's going to be okay.")
 
 # alternatively you can the backslash escape character for
 # single quotes (or double quotes):
