@@ -53,4 +53,6 @@ assert not '123' == 123
 
 # take advantage of the short-circuit to avoid errors
 x = '123'
-isinstance(x, int) and x < 123 # returns False
+isinstance(x, int) and x < 123 # isinstance() returns False
+# so short-circuiting prevents the second comparison, which
+# would generate the exception.
