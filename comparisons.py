@@ -39,8 +39,7 @@ x = "dogs"
 y = "dog"
 assert y < x
 
-# you can check objects of different type
-# for equality
+# you can check objects of different type for equality
 assert '1' != 1
 assert 'g' != True
 
