@@ -38,3 +38,19 @@ assert y < x
 x = "dogs"
 y = "dog"
 assert y < x
+
+# you can check objects of different type
+# for equality
+assert '1' != 1
+assert 'g' != True
+
+assert not '123' == 123
+
+# this code generates a TypeError
+# TypeError: '<' not supported between instances of 'str' and 'int'
+# uncomment to
+#'123' < 123
+
+# take advantage of the short-circuit to avoid errors
+x = '123'
+isinstance(x, int) and x < 123 # returns False
