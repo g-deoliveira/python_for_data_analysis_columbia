@@ -17,23 +17,24 @@ assert 0 < 1 <= 1
 # are equivalent to a sequence of comparisons
 assert 0 < 1 and 1 <= 1
 
-# equality of strings
+# comparing strings
 x = "Orange"
 y = "Orange"
 
 assert x == y
 
-# comparing strings
+# highlighting lexicographical order
 x = "green"
 y = "Green"
 
-assert y < x
+assert y < x # because unicode(G) < unicode(g)
 
 # highlighting lexicographical order
 x = "dog"
 y = "doG"
 assert y < x
 
+# highlighting lexicographical order
 x = "dogs"
 y = "dog"
 assert y < x
