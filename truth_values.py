@@ -1,5 +1,5 @@
 
-# recall an assertion generates an assertion
+# recall an assertion generates an exception
 # if the condition it evaluates is False
 
 # these generate an AssertionError
