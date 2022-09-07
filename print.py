@@ -28,3 +28,20 @@ print('Linebreak:\nNew line\ttab')
 print('\t1\t2\t3')
 print('\t2')
 
+## intro slide
+
+how_complicated = 'quite'
+qualifier = 'a few'
+thing = 'thing'
+action = 'we\'ll split printing out over several lectures.'
+
+# example of f-string, released in Python 3.6
+print(f"Printing in Python can get {how_complicated} complicated.")
+
+# example of str.format, introduced in Python 2.6
+print("There are {q} different ways of accomplishing\nthe same {o}.".format(q=qualifier, o=thing))
+
+# the original way of formatting, using %-formatting, now discouraged
+print("As a result, %s" % action)
+
+
