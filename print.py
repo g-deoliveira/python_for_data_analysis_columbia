@@ -43,5 +43,10 @@ print("There are {q} different ways of accomplishing\nthe same {o}.".format(q=qu
 
 # the original way of formatting, using %-formatting, now discouraged
 print("As a result, %s" % action)
+print("""
+Otherwise, we, could, easily, spend an entire lecture on printing.
+And we don't want to do that!""")
+print()
+
 
 
