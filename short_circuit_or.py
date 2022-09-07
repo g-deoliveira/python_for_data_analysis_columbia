@@ -14,8 +14,6 @@ default = [9999]
 y = x or default
 assert y == [9999] # this passes
 
-
-
 # example where default is not
 # utilized
 x = 10
