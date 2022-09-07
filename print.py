@@ -39,13 +39,14 @@ action = 'we\'ll split printing out over several lectures.'
 print(f"Printing in Python can get {how_complicated} complicated.")
 
 # example of str.format, introduced in Python 2.6
-print("There are {q} different ways of accomplishing\nthe same {o}.".format(q=qualifier, o=thing))
+text = "There are {q} different ways of accomplishing\nthe same {o}."
+print(text.format(q=qualifier, o=thing))
 
 # the original way of formatting, using %-formatting, now discouraged
 print("As a result, %s" % action)
 print("""
 Otherwise, we, could, easily, spend an entire lecture on printing.
-And we don't want to do that!""")
+And nobody wants to sit through that!""")
 print()
 
 
