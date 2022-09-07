@@ -44,10 +44,8 @@ print(text.format(q=qualifier, o=thing))
 
 # the original way of formatting, using %-formatting, now discouraged
 print("As a result, %s" % action)
+
+# printing a triple-quoted string
 print("""
 Otherwise, we, could, easily, spend an entire lecture on printing.
 And nobody wants to sit through that!""")
-print()
-
-
-
