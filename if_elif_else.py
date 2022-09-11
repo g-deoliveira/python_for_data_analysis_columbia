@@ -46,7 +46,8 @@ else:
     cancel_race = False
 
 if (temperature < 40 and precipitation_probability > 66
-        and snow_probability > 66 and wind_speed > 45 and wind_gust > 60):
+        and snow_probability > 66 and wind_speed > 45
+        and wind_gust > 60):
     cancel_race = True
 else:
     cancel_race = False
