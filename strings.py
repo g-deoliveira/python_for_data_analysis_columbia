@@ -106,7 +106,8 @@ except ValueError as ve:
 # replace(old, new): replace old with new
 old = "dog"
 new = "Labrado"
-text.replace(old, new) == "They have one Labrador, one cat and four fish."
+updated_text =
+assert text.replace(old, new) == "They have one Labrador, one cat and four fish."
 
 # chaining string methods together
 text = "   Hello how are you?"
