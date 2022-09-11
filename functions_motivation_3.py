@@ -18,13 +18,22 @@ def clean_up(val):
     return val
 
 def get_value(input_number):
-
-    text = f"""
-    1: Enter an integer between 0 and 100.
+    # input_number should be 1 or 2
+    text = """
+    {}: Enter an integer between 0 and 100.
     Note: Values outside the expected range are clipped.
             Values are rounded to the nearest integer."""
 
-    print(text)
+    print(text.format(input_number))
     raw_value = input("\t> ")
 
     return raw_value
+
+value_1 = get_value(1)
+value_1 = clean_up(value_1)
+
+# now collect value_2
+value_2 = get_value(2)
+value_2 = clean_up(value_2)
+
+print(f"\nThe cleaned up values are {value_1} and {value_2}.\n")

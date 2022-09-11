@@ -3,7 +3,7 @@ print("""
    Note: Values outside the expected range are clipped.
          Values are rounded to the nearest integer.""")
 
-value_1 = input("> ")
+value_1 = input("\t> ")
 
 # clip values
 value_1 = float(value_1)
@@ -21,7 +21,7 @@ print("""
    Note: Values outside the expected range are clipped.
          Values are rounded to the nearest integer.""")
 
-value_2 = input("> ")
+value_2 = input("\t> ")
 
 # clip values
 value_2 = float(value_2)
