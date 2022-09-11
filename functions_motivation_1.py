@@ -34,6 +34,3 @@ if value_2 > 100:
 value_2 = round(value_2)
 
 print(f"The inputted values are {value_1} and {value_2}.")
-
-
-##############
