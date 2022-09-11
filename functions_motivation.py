@@ -2,8 +2,7 @@ instructions = """
 Instructions:
 Enter {order} integer between 0 and 100.
 Note: Values outside the expected range are clipped.
-      Float values are rounded to the nearest integer.
-      Non-numeric values generate an error."""
+      Float values are rounded to the nearest integer."""
 
 print(instructions.format(order="a first"))
 value_1 = input(": ")
