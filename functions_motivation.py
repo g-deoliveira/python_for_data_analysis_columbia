@@ -14,7 +14,8 @@ if value_1 < 0:
 if value_1 > 100:
     value_1 = 100
 
-# round if is float
+# round if float (implicity converts to int)
+# otherwise convert to int
 if isinstance(value_1, float):
     value_1 = round(value_1)
 else:
