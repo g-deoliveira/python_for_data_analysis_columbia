@@ -13,3 +13,19 @@ x2 = a_variable_name \
     + a_super_long_variable_name_123456890
 
 assert x1 == x2
+
+# check this out:
+x0 = 10
+assert x0 == (x0)
+
+# this is a long line: it is over 100 characters long
+x1 = a_variable_name + a_long_variable_name + a_longer_variable_name + a_super_long_variable_name_123456890
+
+# same line can be wrapped in parenthesis
+x2 = (a_variable_name
+    + a_long_variable_name
+    + a_longer_variable_name
+    + a_super_long_variable_name_123456890
+    )
+
+assert x1 == x2
