@@ -1,28 +1,38 @@
-a_variable_name = 1
-a_long_variable_name = 2
-a_longer_variable_name = 3
-a_super_long_variable_name_123456890 = 4
+gross_wages = 125000
+taxable_interest = 6000
+dividends = 500
+qualified_dividends = 0
+ira_deduction = 6000
+student_loan_interest = 10000
 
 # this is a long line: it is over 100 characters long
-x1 = a_variable_name + a_long_variable_name + a_longer_variable_name + a_super_long_variable_name_123456890
+income = gross_wages + taxable_interest + (dividends - qualified_dividends) - ira_deduction - student_loan_interest
 
-# same line wrapped over several lines
-x2 = a_variable_name \
-    + a_long_variable_name + \
-    a_longer_variable_name \
-    + a_super_long_variable_name_123456890
+# same line wrapped over several lines using backslash
+income2 = gross_wages \
+          + taxable_interest \
+          + (dividends - qualified_dividends) \
+          - ira_deduction \
+          - student_loan_interest
 
-assert x1 == x2
+assert income == income2
+
 
 # check this out:
-x0 = 10
-assert x0 == (x0)
+x = 10
+assert x == (x)
 
 # same line can be wrapped in parenthesis
-x2 = (a_variable_name
-    + a_long_variable_name
-    + a_longer_variable_name
-    + a_super_long_variable_name_123456890
-    )
+income = (gross_wages +
+          taxable_interest +
+          (dividends - qualified_dividends) -
+          ira_deduction -
+          student_loan_interest)
 
-assert x1 == x2
+# the preferred approach is to break the
+# line before the mathematical operators
+income = (gross_wages
+            + taxable_interest
+            + (dividends - qualified_dividends)
+            - ira_deduction
+            - student_loan_interest)
