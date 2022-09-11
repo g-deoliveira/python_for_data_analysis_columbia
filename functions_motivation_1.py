@@ -1,7 +1,7 @@
 print("""
 1: Enter an integer between 0 and 100.
    Note: Values outside the expected range are clipped.
-         Float values are rounded to the nearest integer.""")
+         Values are rounded to the nearest integer.""")
 
 value_1 = input(": ")
 
@@ -19,7 +19,7 @@ value_1 = round(value_1)
 print("""
 2: Enter an integer between 0 and 100.
    Note: Values outside the expected range are clipped.
-         Float values are rounded to the nearest integer.""")
+         Values are rounded to the nearest integer.""")
 
 value_2 = input(": ")
 
