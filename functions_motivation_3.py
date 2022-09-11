@@ -18,7 +18,8 @@ def clean_up(val):
     return val
 
 def get_value(input_number):
-    # input_number should be 1 or 2
+    # the input_number is used to enumerate the instructions
+
     text = """
     {}: Enter an integer between 0 and 100.
     Note: Values outside the expected range are clipped.
