@@ -20,7 +20,8 @@ assert income == income2
 
 # check this out:
 x = 10
-assert x == (x)
+y = (10)
+assert x == y
 
 # same line can be wrapped in parenthesis
 income = (gross_wages +
