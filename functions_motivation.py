@@ -14,12 +14,8 @@ if value_1 < 0:
 if value_1 > 100:
     value_1 = 100
 
-# round if float (implicity converts to int)
-# otherwise convert to int
-if isinstance(value_1, float):
-    value_1 = round(value_1)
-else:
-    value_1 = int(value_1)
+# round - implicitly converts to int
+value_1 = round(value_1)
 
 # now collect value_2
 print(instructions.format(order="a second"))
@@ -32,10 +28,7 @@ if value_2 < 0:
 if value_2 > 100:
     value_2 = 100
 
-# round if is float
-if isinstance(value_2, float):
-    value_2 = round(value_2)
-else:
-    value_2 = int(value_2)
+# round - implicitly converts to int
+value_2 = round(value_2)
 
 print(f"The inputted values are {value_1} and {value_2}.")
