@@ -13,7 +13,8 @@ assert 30 == 10 * 3
 assert 2.25 == 9 / 4
 
 # note, division returns a float
-assert 10 / 2 == 5.0
+x = 10 / 2
+assert isinstance(x, float)
 
 # floor division
 assert 2 == 9 // 4 # returns an int
