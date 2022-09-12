@@ -1,5 +1,5 @@
 # Example 1
-temperature = 50
+temperature = 50 # initialize variable
 
 wear_a_jacket = temperature < 40
 # equivalent definition using conditional expression
@@ -7,7 +7,7 @@ wear_a_jacket = True if temperature < 40 else False
 
 
 # Example 2
-modify_scale_factor = True
+modify_scale_factor = True # initialize variable
 
 if modify_scale_factor:
     scale_factor = 1.2
