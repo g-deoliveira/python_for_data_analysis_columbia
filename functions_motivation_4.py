@@ -1,4 +1,4 @@
-from input_functions import clean_up, get_value
+from functions_library import clean_up, get_value
 
 value_1 = clean_up(get_value(1))
 value_2 = clean_up(get_value(2))
