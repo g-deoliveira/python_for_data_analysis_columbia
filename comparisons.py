@@ -43,7 +43,8 @@ assert y < x
 assert '1' != 1     # comparing string to integer
 assert 'g' != True  # comparing string to Boolean
 
-assert not '123' == 123
+# string representation of an int is not equal to that int
+assert not ('123' == 123)
 
 # this code generates a TypeError
 # TypeError: '<' not supported between instances of 'str' and 'int'
