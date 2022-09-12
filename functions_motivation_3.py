@@ -19,16 +19,13 @@ def clean_up(val):
 
 def get_value(input_number):
     # the input_number is used to enumerate the instructions
-
     text = """
     {}: Enter an integer between 0 and 100.
     Note: Values outside the expected range are clipped.
             Values are rounded to the nearest integer."""
-
     print(text.format(input_number))
-    raw_value = input("\t> ")
 
-    return raw_value
+    return input("\t> ")
 
 value_1 = get_value(1)
 value_1 = clean_up(value_1)
