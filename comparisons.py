@@ -44,12 +44,13 @@ assert '1' != 1     # comparing string to integer
 assert 'g' != True  # comparing string to Boolean
 
 # string representation of an int is not equal to that int
+# but more importantly this comparison does not generate an error
 assert not ('123' == 123)
 
-# this code generates a TypeError
-# TypeError: '<' not supported between instances of 'str' and 'int'
-# uncomment to see the error:
+# on the other hand, uncomment and run this single line of code
 #'123' < 123
+# it generates a TypeError because '<' is not supported
+# between instances of 'str' and 'int'
 
 # take advantage of the short-circuit to avoid errors
 x = '123'
