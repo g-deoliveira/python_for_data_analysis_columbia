@@ -1,37 +1,13 @@
 # these are the reserved keywords (Python 3.8 and above)
 
-# and
-# as
-# assert
-# async
-# await
-# break
-# class
-# continue
-# def
-# del
-# elif
-# else
-# except
-# False
-# finally
-# for
-# from
-# global
-# if
-# import
-# in
-# is
-# lambda
-# None
-# nonlocal
-# not
-# or
-# pass
-# raise
-# return
-# True
-# try
-# while
-# with
-# yield
+"""
+
+and        continue   finally    is         raise
+as         def        for        lambda     return
+assert     del        from       None       True
+async      elif       global     nonlocal   try
+await      else       if         not        while
+break      except     import     or         with
+class      False      in         pass       yield
+
+"""
