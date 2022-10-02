@@ -19,9 +19,9 @@ def is_numeric(input_list):
 
 # tests
 assert is_numeric([1, 2.0, -33]) == True
-assert is_numeric(["1", 2.0, -33]) == False
-assert is_numeric([1, "2.0", -33]) == False
-assert is_numeric([1, 2.0, "-33"]) == False
+assert is_numeric([True, 2.0, -33]) == False
+assert is_numeric([True, "2.0", -33]) == False
+assert is_numeric(["1", 2.0, False]) == False
 
 
 
