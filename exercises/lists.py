@@ -7,9 +7,8 @@ def is_numeric(input_list):
         input_list:
             a list of values of any type
     output:
-        Returns True if all of the elements in input_list
-        are numeric, ie integer or float; otherwise
-        returns False
+        Returns True if all of the elements in input_list are numeric, ie integer
+        or float; otherwise returns False
 
     example:
         is_numeric([1, 2.0]) returns True
@@ -33,9 +32,8 @@ def list_add(listx, listy):
         listy:
             a list of integers or floats
     output:
-        A list that contains the sum of both lists. If
-        the input lists have unequal lengths then an
-        error msg is printed and nothing is returned.
+        A list that contains the sum of both lists. If the input lists have unequal
+        lengths then an error msg is printed and nothing is returned.
 
     example:
         list_add([1,2], [2,3]) returns [3,5]
@@ -56,11 +54,9 @@ def list_add_general(listx, listy):
         listy:
             a list of integers or floats
     output:
-        A list that contains the sum of both lists. If
-        the input lists have unequal lengths then this
-        function returns a list whose length is equal to
-        the longer list and the extra elements are equal
-        to those of the longer list.
+        A list that contains the sum of both lists. If the input lists have unequal
+        lengths then this function returns a list whose length is equal to the
+        longer list and the extra elements are equal to those of the longer list.
 
     example:
         list_add_general([1, 2, 10, 20], [2, 3]) returns [3, 5, 10, 20]
@@ -81,17 +77,15 @@ def list_operation(listx, listy, op="addition"):
         listy:
             A list of integers or floats
         op:
-            A string that describes the operation.
-            Defaults to "addition". Possible values are
-            "addition", "subtraction", "multiplication",
-            "division", "max", and "min".
+            A string that describes the operation. Defaults to "addition". Possible
+            values are "addition", "subtraction", "multiplication", "division",
+            "max", and "min".
     output:
-        A list that contains the result of the operation `op`
-        of both lists. If the input lists have unequal lengths
-        then this function returns a list whose length is equal to
-        the longer list and the extra elements are equal
-        to those of the longer list. If there is a division by
-        zero, that value will be returned as math.nan.
+        A list that contains the result of the operation `op` of both lists. If the
+        input lists have unequal lengths then this function returns a list whose
+        length is equal to the longer list and the extra elements are equal to those
+        of the longer list. If there is a division by zero, that value will be
+        returned as math.nan.
 
     example:
         list_operation([1, 5, 10], [2, 0]) returns [3, 5, 10]
