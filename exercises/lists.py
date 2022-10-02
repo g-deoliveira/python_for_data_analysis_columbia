@@ -4,8 +4,8 @@ import math
 def is_numeric(input_list):
     """
     input parameters:
-        input_list:
-            a list of values of any type
+        input_list: a list of values of any type
+
     output:
         Returns True if all of the elements in input_list are numeric, ie integer
         or float; otherwise returns False
@@ -28,8 +28,8 @@ assert is_numeric([1, 2.0, "-33"]) == False
 def convert_to_numeric(items):
     """
     input parameters:
-        items:
-            a list of values of any type
+        items: a list of values of any type
+
     output:
         Returns the same list with any non-numeric item replaced with a zero value.
 
@@ -47,12 +47,12 @@ assert convert_to_numeric(["True", True, False, 0]) == [0, 0, 0, 0]
 def list_add(listx, listy):
     """
     input parameters:
-        listx:
-            a list of values of any type
-        listy:
-            a list of values of any type
+        listx: a list of values of any type
+        listy: a list of values of any type
+
     output:
         A list that contains the sum of both lists.
+
     special handling:
         If the lists do not contain ints or floats then an error msg is printed
         and nothing is returned. If the input lists have unequal lengths then an
@@ -72,10 +72,8 @@ assert list_add([1], [0,1,1,1]) is None
 def list_add_general(listx, listy):
     """
     input parameters:
-        listx:
-            a list of values of any type
-        listy:
-            a list of values of any type
+        listx: a list of values of any type
+        listy: a list of values of any type
 
     output:
         A list that contains the sum of both lists.
@@ -101,14 +99,12 @@ assert list_add_general([10,2,3,4], [0,0]) == [10,2,3,4]
 def list_operation(listx, listy, op="addition"):
     """
     input parameters:
-        listx:
-            A list of values of any type
-        listy:
-            A list of values of any type
-        op:
-            A string that describes the operation. Defaults to "addition". Possible
+        listx: a list of values of any type
+        listy: a list of values of any type
+        op: a string that describes the operation. Defaults to "addition". Possible
             values are "addition", "subtraction", "multiplication", "division",
             "max", and "min".
+
     output:
         A list that contains the result of the operation `op` of both lists.
 
