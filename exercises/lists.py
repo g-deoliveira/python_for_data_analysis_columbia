@@ -86,13 +86,13 @@ def list_add_general(listx, listy):
 
     example:
         list_add_general([1, 2, 10, 20], [2, 3]) returns [3, 5, 10, 20]
-        list_add_general([1, "2", 10, "20"], [2, 3]) returns [3, 0, 10, 0]
+        list_add_general([1, "2", 10, "20"], [2, 3]) returns [3, 3, 10, 0]
     """
     pass
 
 # tests
 assert list_add_general([1, 2, 10, 20], [2, 3]) == [3, 5, 10, 20]
-assert list_add_general([10, True], [2,3,"4"]) == [12,3,4]
+assert list_add_general([10, True], [2,3,"4"]) == [12,3,0]
 assert list_add_general([10,2,3,4], [0,0]) == [10,2,3,4]
 
 
