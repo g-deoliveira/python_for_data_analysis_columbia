@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-# define these variables
-temperature = 82
-is_raining = True
-
-=======
 # define some variables
 temperature = 82
 is_raining = True
 
 # assign the results of comparisons to other variables
->>>>>>> updates
 is_hot_day = temperature > 80
 is_hot_and_raining = is_hot_day and is_raining
 
