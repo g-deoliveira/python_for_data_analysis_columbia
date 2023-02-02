@@ -23,13 +23,20 @@ result = print_hello2()
 assert result is None
 
 
-def print_text(text):
-    # print_text takes 1 input argument
+def return_text(text):
+    return text
+
+value = 'some random text'
+result = return_text(value)
+assert result == value
+
+
+def print_and_return_text(text):
     print(text)
     return text
 
-value = 'This is a string!!'
-result = print_text(value)
+value = 'more random text'
+result = print_and_return_text(value)
 assert result == value
 
 
