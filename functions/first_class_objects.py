@@ -13,7 +13,6 @@ def return_x(x):
     return x
 
 def get_max_min(what):
-
     if what == "min":
         return min
     elif what == "max":
