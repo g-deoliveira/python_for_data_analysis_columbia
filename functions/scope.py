@@ -1,5 +1,3 @@
-
-
 def change_x(x):
     x = 100
     print("in change_x, x=", x)
