@@ -7,7 +7,6 @@ assert x is None
 
 
 def print_hello1():
-    # print_hello1 returns None (implicitly)
     print('hello1')
 
 result = print_hello1()
@@ -15,7 +14,6 @@ assert result is None
 
 
 def print_hello2():
-    # print_hello2 returns None (explicitly)
     print('hello2')
     return None
 
