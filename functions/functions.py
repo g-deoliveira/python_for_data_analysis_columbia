@@ -1,4 +1,10 @@
 
+def do_nothing():
+    pass
+
+x = do_nothing()
+assert x is None
+
 
 def print_hello1():
     # print_hello1 returns None (implicitly)
