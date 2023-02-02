@@ -26,3 +26,10 @@ assert default_args(z=2) == 3
 assert default_args(y=2) == 0.5
 assert default_args(z=2, y=2, x=2) == 3
 assert default_args(2, 2, 2) == 3
+
+def some_default_args(x, y=1, z=0):
+    return x / y + z
+
+assert some_default_args(0) == 0
+assert some_default_args(3) == 3
+
