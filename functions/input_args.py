@@ -18,3 +18,11 @@ assert keyword_args(2, 4, z=5) == 5.5
 assert keyword_args(2, y=4, z=5) == 5.5
 assert keyword_args(2, z=5, y=4) == 5.5
 
+def keyword_args(x=1, y=1, z=0):
+    return x / y + z
+
+assert keyword_args() == 1
+assert keyword_args(z=2) == 3
+assert keyword_args(y=2) == 0.5
+assert keyword_args(z=2, y=2, x=2) == 3
+assert keyword_args(2, 2, 2) == 3
