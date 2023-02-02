@@ -1,5 +1,5 @@
 
-def <function_name> ([<parameters]):
+def <function_name> ([<parameters>]):
     <statement>
     <statement>
     ...
