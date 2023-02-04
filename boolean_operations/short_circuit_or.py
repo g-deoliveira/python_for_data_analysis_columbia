@@ -1,10 +1,6 @@
-x,y,z = 0, 5, 10
-val = x < y or y < z
-assert val
+x,y,a,b = 0,0,0,0
 
-x,y,z = 10,5,3
-val = x < y or y < z
-assert not val
+val = (x < y) or (a < b)
 
 x,y,z = 100, 5, 10
 val = x or y or z

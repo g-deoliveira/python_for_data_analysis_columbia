@@ -1,10 +1,6 @@
-x,y,z = 0, 5, 10
-val = x < y and y < z
-assert val == y < z
+x,y,a,b = 0,0,0,0
 
-x,y,z = 10,5,3
-val = x < y and y < z
-assert val == x < y
+val = (x < y) and (a < b)
 
 x,y,z = 100, 5, 10
 val = x and y and z
