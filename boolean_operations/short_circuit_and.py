@@ -12,7 +12,7 @@ x,y,z = 0, 5, 10
 val = x and y and z
 assert val == x
 
-x,y,z = 0, 0, 10
+x,y,z = 5, 0, 10
 val = x and y and z
 assert val == y
 
