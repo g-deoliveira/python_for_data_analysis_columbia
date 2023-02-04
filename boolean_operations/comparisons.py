@@ -57,3 +57,11 @@ x = '123'
 isinstance(x, int) and x < 123 # isinstance() returns False
 # so short-circuiting prevents the second comparison, which
 # would generate the exception.
+
+# the order of numerical strings
+
+assert "1" < "2"
+assert "1" < "10"
+assert "2" > "10"
+assert "9" > "10000"
+assert "200" > "1999"
