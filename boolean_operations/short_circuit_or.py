@@ -1,6 +1,8 @@
-x,y,a,b = 0,0,0,0
+def comparison(a,b,c,d):
 
-val = (x < y) or (a < b)
+    val = (a < b) or (b < c) or (c < d)
+
+    return val
 
 x,y,z = 100, 5, 10
 val = x or y or z
