@@ -18,7 +18,7 @@ while x < 3:
 
 
 x = 0
-while x < 3:
+while True:
     print(f"in while loop 3 with x={x}")
     x = x + 1
     if x > 1:
