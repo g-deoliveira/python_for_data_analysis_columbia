@@ -4,9 +4,12 @@ def sum_n_digits(n):
         s += k
     return s
 
+def exact_formula(n):
+    return n * (n + 1) / 2
+
 for k in range(101):
     sum_n = sum_n_digits(k+1)
-    exact = k * (k + 1) / 2
+    exact = exact_formula(k)
     assert sum_n == exact
 
     if k % 10 == 0:
