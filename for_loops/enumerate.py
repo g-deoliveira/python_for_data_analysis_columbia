@@ -1,5 +1,3 @@
-
-
 counter = 0
 for pet in ["cat", "bird", "dog"]:
     print(counter, pet)
