@@ -1,7 +1,7 @@
 counter = 0
-for i in [1,2]:
-    for j in ["cat","bird"]:
-        print(f"({i},{j}) - {counter}")
+for idx in [1,2]:
+    for pet in ["cat","bird"]:
+        print(f"({idx},{pet}) - {counter}")
         counter += 1
 
 for k in range(5):
