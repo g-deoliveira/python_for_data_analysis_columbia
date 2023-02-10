@@ -1,18 +1,17 @@
 for k in [1,2,3]:
     print(k)
 
-for k in ["a", "b", "c"]:
-    print(k)
+for char in ["a", "b", "c"]:
+    print(char)
 
-for k in [max, min, abs]:
-    print(k)
+for func in [max, min, abs]:
+    print(func)
 
 def square(x):
     return x * x
 
-
-for k in [128, 256, 512]:
-    print(f"{square(k):>10,d}")
+for val in [128, 256, 512]:
+    print(f"{square(val):>10,d}")
 
 
 
