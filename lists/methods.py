@@ -5,10 +5,11 @@ assert L.count("a") == 3
 assert L.count("c") == 1
 assert L.count("x") == 0
 
+# index
 assert L.index("a") == 0
 assert L.index("b") == 1
 
-# specify the start
+# index: specify the start
 assert L.index("a", 1) == 3
 
 # append
