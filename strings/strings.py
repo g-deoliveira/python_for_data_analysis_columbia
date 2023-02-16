@@ -33,11 +33,11 @@ assert len("H") == 1
 assert len(text) == 12
 
 assert "a" 'b' """cde""" == "abcde"
+
 text = (
     "This separated string "
     "becomes one."
 )
-
 assert text == "This separated string becomes one."
 
 space_separated_list = [
