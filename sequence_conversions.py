@@ -8,3 +8,8 @@ y = tuple(m)
 assert isinstance(y, tuple)
 
 assert t == y
+
+
+text = "cats"
+assert list(text) == ["c", "a", "t", "s"]
+assert tuple(text) == ("c", "a", "t", "s")
