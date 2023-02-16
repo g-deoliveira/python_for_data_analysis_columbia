@@ -1,4 +1,4 @@
-t = tuple(["a", "b", "c", "a", "a", "b"])
+t = ("a", "b", "c", "a", "a", "b", )
 
 # count
 assert t.count("a") == 3
