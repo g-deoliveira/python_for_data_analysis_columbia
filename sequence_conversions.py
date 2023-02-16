@@ -17,3 +17,4 @@ assert tuple(text) == ("c", "a", "t", "s")
 
 D = {"x": 1, "y": 20}
 assert list(D) == ["x", "y"]
+assert tuple(D) == ("x", "y")
