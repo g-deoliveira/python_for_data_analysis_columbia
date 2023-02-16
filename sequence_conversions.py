@@ -18,3 +18,7 @@ assert tuple(text) == ("c", "a", "t", "s")
 D = {"x": 1, "y": 20}
 assert list(D) == ["x", "y"]
 assert tuple(D) == ("x", "y")
+
+for key in list(D):
+    print(key, D[key])
+
