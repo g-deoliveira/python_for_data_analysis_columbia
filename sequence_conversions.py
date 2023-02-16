@@ -13,3 +13,7 @@ assert t == y
 text = "cats"
 assert list(text) == ["c", "a", "t", "s"]
 assert tuple(text) == ("c", "a", "t", "s")
+
+
+D = {"x": 1, "y": 20}
+assert list(D) == ["x", "y"]
