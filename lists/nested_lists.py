@@ -1,5 +1,6 @@
 x = ["a", "b"]
 
+# set the second element to a list
 x[1] = ["b", "c"]
 
 assert x == ["a", ["b", "c"]]

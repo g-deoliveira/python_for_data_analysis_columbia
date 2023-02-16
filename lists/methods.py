@@ -1,3 +1,16 @@
+L = ["a", "b", "c", "a", "a", "b"]
+
+# count
+assert L.count("a") == 3
+assert L.count("c") == 1
+assert L.count("x") == 0
+
+assert L.index("a") == 0
+assert L.index("b") == 1
+
+# specify the start
+assert L.index("a", 1) == 3
+
 # append
 L = ["a", "1"]
 L.append("2")
