@@ -34,12 +34,11 @@ assert len(text) == 12
 
 assert "a" 'b' """cde""" == "abcde"
 text = (
-    "This long string "
-    "will be combined into one "
-    "string at run time."
+    "This separated string "
+    "becomes one."
 )
 
-assert text == "This long string will be combined into one string at run time."
+assert text == "This separated string becomes one."
 
 space_separated_list = [
     "a"
