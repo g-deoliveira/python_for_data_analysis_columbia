@@ -19,3 +19,6 @@ assert cats.get("xya") == None
 # query for non-existant key with default
 assert cats.get("xya", 0) == 0
 
+if "xya" in cats:
+    print(cats["xya"])
+
