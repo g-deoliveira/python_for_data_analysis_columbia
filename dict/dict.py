@@ -55,5 +55,17 @@ assert "birth_month" not in singer
 assert len(singer) == 4
 assert len(singer["grammy_awards"]) == 2
 
+assert singer == \
+{
+    "first_name": "Tina",
+    "last_name": "Turner",
+    "grammy_awards": {
+        "won": 8,
+        "nominations": 25
+    },
+    "birth_year": 1939
+}
+
+
 
 singer[0]
