@@ -67,5 +67,9 @@ assert singer == \
 }
 
 
+if "birth_year" in singer:
+    print(singer["birth_year"])
+if "birth_month" in singer:
+    print(singer["birth_month"])
 
 singer[0]
