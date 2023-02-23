@@ -54,3 +54,6 @@ assert "birth_month" not in singer
 # length
 assert len(singer) == 4
 assert len(singer["grammy_awards"]) == 2
+
+
+singer[0]
