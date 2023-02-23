@@ -34,15 +34,18 @@ singer = dict(
     )
 )
 
-# indexing
+# access
 assert singer["first_name"] == "Tina"
+assert singer["last_name"] == "Turner"
+
+# add new item
+singer["birth_year"] = 1039
+
+# update item
+singer["birth_year"] = 1939
+
 # nested dictionaries
 assert singer["grammy_awards"]["won"] == 8
-
-# assigning a new key-value pair
-singer["birth_year"] = 1039
-# oops made a typo, need to update
-singer["birth_year"] = 1939
 
 # membership
 assert "birth_year" in singer
