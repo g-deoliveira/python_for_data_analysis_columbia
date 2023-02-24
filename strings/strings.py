@@ -39,7 +39,7 @@ assert 2 * "abc" == "abcabc"
 assert "a" 'b' """cde""" == "abcde"
 
 text = (
-    "This separated string "
+    "This separated string " # context comment
     "becomes one."
 )
 assert text == "This separated string becomes one."
