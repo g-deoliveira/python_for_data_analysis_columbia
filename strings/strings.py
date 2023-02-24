@@ -32,6 +32,10 @@ assert len("") == 0
 assert len("H") == 1
 assert len(text) == 12
 
+assert "xyz" + "abc" == "xyzabc"
+assert "abc" * 2 == "abcabc"
+assert 2 * "abc" == "abcabc"
+
 assert "a" 'b' """cde""" == "abcde"
 
 text = (
