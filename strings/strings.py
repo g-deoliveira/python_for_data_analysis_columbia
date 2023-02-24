@@ -44,17 +44,12 @@ text = (
 )
 assert text == "This separated string becomes one."
 
-space_separated_list = [
-    "a"
-    "b"
-    "c"
+my_list = [
+    "cat",
+    "dog"   # oops forgot a comma here
+    "fish",
+    "bird",
 ]
 
-comma_separated_list = [
-    "a",
-    "b",
-    "c",
-]
+assert my_list == ["cat", "dogfish", "bird"]
 
-assert len(space_separated_list) == 1
-assert len(comma_separated_list) == 3
