@@ -1,7 +1,6 @@
 x = set()
 
 x.add(1)
-
 assert x == {1}
 len(x) == 1
 
