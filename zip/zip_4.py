@@ -21,3 +21,5 @@ actual = {}
 n = len(x)
 for k in range(n):
     actual[x[k]] = y[k]
+
+assert expected == actual
