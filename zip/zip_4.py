@@ -16,3 +16,8 @@ expected = {
 assert expected == actual
 
 assert expected == dict(zip(x,y))
+
+actual = {}
+n = len(x)
+for k in range(n):
+    actual[x[k]] = y[k]
