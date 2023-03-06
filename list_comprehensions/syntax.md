@@ -10,12 +10,12 @@ for i,j,... in <iterables>:
 ```
 If we include a filter, the syntax becomes:
 ```python
-x = [function(i,j,...) for i,j,... in <iterables> if filter(i,j,...)]
+x = [function(i,j,...) for i,j,... in <iterables> if filter_condition(i,j,...)]
 ```
 equivalent to:
 ```python
 x = []
 for i,j,... in <iterables>:
-    if filter(i,j,...):
+    if filter_condition(i,j,...):
         x.append(function(i,j,...))
 ```
