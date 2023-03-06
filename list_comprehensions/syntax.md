@@ -19,3 +19,7 @@ for i,j,... in <iterables>:
     if filter_condition(i,j,...):
         x.append(function(i,j,...))
 ```
+Syntax for dict-comprehension
+```python
+{k(i,j,k,...):v(i,j,k,...) for i,j,k... in <iterables>}
+```
