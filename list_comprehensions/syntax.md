@@ -23,3 +23,11 @@ Syntax for dict-comprehension
 ```python
 {k(i,j,k,...):v(i,j,k,...) for i,j,k... in <iterables>}
 ```
+equivalent to
+```python
+D = {}
+for i,j,k,... in <iterables>:
+    key = k(i,j,k,...)
+    value = v(i,j,k,...)
+    D[key] = value
+```
