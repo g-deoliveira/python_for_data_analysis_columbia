@@ -25,9 +25,9 @@ Syntax for dict-comprehension
 ```
 equivalent to
 ```python
-D = {}
+d = {}
 for i,j,k,... in <iterables>:
     key = k(i,j,k,...)
     value = v(i,j,k,...)
-    D[key] = value
+    d[key] = value
 ```
