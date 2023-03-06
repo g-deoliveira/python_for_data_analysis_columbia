@@ -1,4 +1,5 @@
-Syntax for list-comprehension:
+## List-comprehensions
+Basic syntax:
 ```python
 x = [function(i,j,...) for i,j,... in <iterables>]
 ```
@@ -19,7 +20,8 @@ for i,j,... in <iterables>:
     if filter_condition(i,j,...):
         x.append(function(i,j,...))
 ```
-Syntax for dict-comprehension
+## Dictionary-comprehensions
+Basic syntax
 ```python
 {k(i,j,k,...):v(i,j,k,...) for i,j,k... in <iterables>}
 ```
@@ -30,4 +32,8 @@ for i,j,k,... in <iterables>:
     key = k(i,j,k,...)
     value = v(i,j,k,...)
     d[key] = value
+```
+Syntax for dict-comprehension with addition of filter condition
+```python
+{k(i,j,k,...):v(i,j,k,...) for i,j,k... in <iterables> if filter_condition(i,j,...)}
 ```
