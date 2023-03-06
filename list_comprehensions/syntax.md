@@ -37,3 +37,12 @@ Syntax for dict-comprehension with addition of filter condition
 ```python
 {k(i,j,k,...):v(i,j,k,...) for i,j,k... in <iterables> if filter_condition(i,j,...)}
 ```
+equivalent to
+```python
+d = {}
+for i,j,k,... in <iterables>:
+    if filter_condition(i,j,k,...):
+        key = k(i,j,k,...)
+        value = v(i,j,k,...)
+        d[key] = value
+```
