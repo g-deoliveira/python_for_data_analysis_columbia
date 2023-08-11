@@ -2,19 +2,18 @@
 # recall an assertion generates an exception
 # if the condition it evaluates is False
 
-# these generate an AssertionError
-assert False
-assert None
-assert 0
-assert 0.0
-assert '' # empty string (using single quotes)
-assert "" # empty string (using double quotes)
-assert [] # empty list
-assert () # empty tuple
+# all of these evalue to False
+bool(0)
+bool(0.0)
+bool(None)
+bool('') # empty string (using single quotes)
+bool("") # empty string (using double quotes)
+bool([]) # empty list
+bool(()) # empty tuple
 
-# these all pass
-assert True
-assert 3
-assert 'cat'
-assert ' '
-assert [0]
+# all of these evaluate to True
+bool(True)
+bool(3)
+bool('cat')
+bool(' ') # non-empty string
+bool([0]) # non-empty list
