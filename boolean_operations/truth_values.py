@@ -1,8 +1,5 @@
 
-# recall an assertion generates an exception
-# if the condition it evaluates is False
-
-# all of these evalue to False
+# all of these evaluate to False
 bool(0)
 bool(0.0)
 bool(None)
