@@ -1,23 +1,14 @@
 # boolean operations
 
-print('True or True  :', True or True)
-print('True or False :', True or False)
-print('False or True :', False or True)
-print('False or False:', False or False)
+assert (True or True) == True
+assert (True or False) == True
+assert (False or True) == True
+assert (False or False) == False
 
-print('\nTrue and True  :', True and True)
-print('True and False :', True and False)
-print('False and True :', False and True)
-print('False and False:', False and False)
+assert (True and True) == True
+assert (True and False) == False
+assert (False and True) == False
+assert (False and False) == False
 
-print('\nnot True :', not True)
-print('not False:', not False)
-
-x = 100
-print('\nTrue or x :', True or x)
-print('False or x:', False or x)
-
-x = 100
-print('\nTrue and x :', True and x)
-print('False and x:', False and x)
-
+assert (not True) == False
+assert (not False) == True
