@@ -1,6 +1,4 @@
 
-
-
 i = 80   # this is an integer
 assert isinstance(i, int)
 assert type(i) == int
