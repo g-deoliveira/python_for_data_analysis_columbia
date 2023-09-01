@@ -40,3 +40,13 @@ assert bool(0) is False
 # because you can't represent 'abc' as a number
 x = 'abc'
 y = int(x)
+
+
+# more exploration of the isinstance function
+x = 100
+y = 100.0
+assert isinstance(x, (float, int))
+assert isinstance(x, float) or isinstance(x, int)
+
+assert isinstance(y, (float, int))
+assert isinstance(y, float) or isinstance(y, int)
