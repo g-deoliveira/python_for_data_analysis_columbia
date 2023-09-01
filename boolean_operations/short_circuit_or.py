@@ -1,6 +1,6 @@
-def comparison(a,b,c,d):
+def comparison(a,b,c):
 
-    val = (a < b) or (b < c) or (c < d)
+    val = a or b or c
 
     return val
 

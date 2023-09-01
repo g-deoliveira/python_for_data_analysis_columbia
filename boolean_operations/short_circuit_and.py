@@ -1,6 +1,6 @@
-def comparison(a,b,c,d):
+def comparison(a,b,c):
 
-    val = (a < b) and (b < c) and (c < d)
+    val = a and b and c
 
     return val
 
