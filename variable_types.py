@@ -7,17 +7,22 @@ x = 80.0  # this is a float
 assert isinstance(x, float)
 assert type(x) == float
 
-c = 'cat'   # this is a string
-assert isinstance(c, str)
-assert type(c) == str
-
 flag = True  # this is a boolean variable
 assert isinstance(flag, bool)
 assert type(flag) == bool
 
-y = b'oo'    # this is a byte array
-assert isinstance(y, bytes)
-assert type(y) == bytes
+c = 'cat'   # this is a string
+assert isinstance(c, str)
+assert type(c) == str
+
+# more exploration of the isinstance function
+x = 100
+y = 100.0
+assert isinstance(x, (float, int))
+assert isinstance(x, float) or isinstance(x, int)
+
+assert isinstance(y, (float, int))
+assert isinstance(y, float) or isinstance(y, int)
 
 
 # type cast numbers to strings:
@@ -41,12 +46,3 @@ assert bool(0) is False
 x = 'abc'
 y = int(x)
 
-
-# more exploration of the isinstance function
-x = 100
-y = 100.0
-assert isinstance(x, (float, int))
-assert isinstance(x, float) or isinstance(x, int)
-
-assert isinstance(y, (float, int))
-assert isinstance(y, float) or isinstance(y, int)
