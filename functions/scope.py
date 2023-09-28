@@ -1,4 +1,4 @@
-def scope():
+def my_example_scope():
     x = 123
     y = 456
     z = x + y
