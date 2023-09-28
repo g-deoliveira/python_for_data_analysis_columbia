@@ -1,11 +1,23 @@
-def flip(a, b):
-    return b, a
+def f():
+    return None
 
-assert flip(1, 2) == (2, 1)
+def g():
+    return
 
+def h():
+    pass
 
-c = flip(1, 2)
-assert c == (2, 1)
+assert f() is None
+assert g() is None
+assert h() is None
 
-a1, b1 = flip(1,2)
-assert b1, a1 == (1, 2)
+def f(x, y):
+    return (
+        x,
+        y,
+        [x, y],
+        {x:y}, (x, y),
+        "".join([str(x),str(y)])
+    )
+
+assert f(1, 2) == (1, 2, [1, 2], {1: 2}, (1, 2), "12")
