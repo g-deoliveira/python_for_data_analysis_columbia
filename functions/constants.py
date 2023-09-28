@@ -19,5 +19,5 @@ def fahrenheit_to_celcius(x):
 assert area_of_circle(1) == PI
 assert volume_of_sphere(1) == 4 / 3 * PI
 assert celcius_to_fahrenheit(20) == 68.0
-assert fahrenheit_to_celcius(68) == 20.0, fahrenheit_to_celcius(68)
+assert fahrenheit_to_celcius(68) == 20.0
 
