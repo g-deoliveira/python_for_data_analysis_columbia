@@ -8,6 +8,7 @@ def scope():
 # if you run this code, it generates errors
 # print(x)
 # print(y)
+# print(z)
 
 def change_x(x):
     x = 100
