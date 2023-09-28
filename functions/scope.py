@@ -1,3 +1,12 @@
+def scope():
+    x = 123
+    y = 456
+
+# the code outside of the function scope()
+# does not have access to variables x and y
+# if you run this code, it generates errors
+# print(x, y)
+
 def change_x(x):
     x = 100
     print("in change_x, x=", x)
