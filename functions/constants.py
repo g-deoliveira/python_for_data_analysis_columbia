@@ -21,3 +21,5 @@ assert volume_of_sphere(1) == 4 / 3 * PI
 assert celcius_to_fahrenheit(20) == 68.0
 assert fahrenheit_to_celcius(68) == 20.0
 
+PI = 1.0
+assert PI == 1
