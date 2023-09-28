@@ -1,9 +1,9 @@
-def my_example_scope():
+def scope_example():
     x = 123
     y = 456
     z = x + y
 
-# the code outside of the function scope()
+# the code outside of the function scope_example()
 # does not have access to variables x and y
 # if you run this code, it generates errors
 # print(x)
