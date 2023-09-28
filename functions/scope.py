@@ -26,6 +26,7 @@ def change_and_return_x(x):
     print("in change_x, x=", x)
     return x
 
+x = 20
 print("\nprior to change_and_return_x, x=", x)
 x = change_and_return_x(x)
 print("after the call to change_and_return_x, x=", x)
