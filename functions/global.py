@@ -39,12 +39,14 @@ assert change_local() == 3
 # the function, then we are telling the program we can
 # access it and modify it from anywhere
 
+count = 100
+
 # define a function that attempts to change the global variable
 def change_global_new():
     global count
     print(count)
-    count = count + 10
-    return count
+    count = count + 11
+    return count + 1000
 
-assert change_global_new() == 10
-assert count == 10
+assert change_global_new() == 1111
+assert count == 111
