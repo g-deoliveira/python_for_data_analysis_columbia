@@ -24,7 +24,10 @@ assert data == book
 
 # now convert a dictionary to a json-string notation
 book_as_string = json.dumps(book)
-assert book_as_string == '{"title": "Clean Code", "author": "R. Martin", "year": 2008}'
+assert (
+    book_as_string
+    == '{"title": "Clean Code", "author": "R. Martin", "year": 2008}'
+)
 
 # now convert the json-string variable to a dictionary
 book_from_string = json.loads(book_as_string)
