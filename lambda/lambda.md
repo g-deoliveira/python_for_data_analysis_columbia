@@ -10,3 +10,12 @@ def what_to_wear(exercise):
         return wear(regular_shoes)
 
 ```
+
+```python
+lambda x, y, z: x + y + z
+```
+
+```python
+def mysum(x, y, z):
+    return x + y + z
+```
