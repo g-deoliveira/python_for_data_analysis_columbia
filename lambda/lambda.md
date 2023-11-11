@@ -1,9 +1,8 @@
 ```python
-lambda exercise: wear(running_shoes) if exercise==run else wear(regular_shoes)
+lambda exercise: wear(sneakers) if exercise else wear(shoes)
 ```
 
 ```python
-
 def what_to_wear(exercise):
     if exercise == run:
         return wear(running_shoes)
