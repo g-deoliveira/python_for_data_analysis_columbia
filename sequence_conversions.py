@@ -3,12 +3,15 @@ assert isinstance(t, tuple)
 
 m = list(t)
 assert isinstance(m, list)
+assert m == [1, 2, 3]
 
 y = tuple(m)
 assert isinstance(y, tuple)
-
+assert y == (1, 2, 3)
 assert t == y
 
+assert list(tuple(list(t))) == [1, 2, 3]
+assert tuple(list(tuple(t))) == (1, 2, 3)
 
 text = "cats"
 assert list(text) == ["c", "a", "t", "s"]
