@@ -1,0 +1,30 @@
+{
+    "buyers": [
+        {
+            "name": "John von Neumann",
+            "buyer_metric": 80
+        },
+        {
+            "name": "Paul Dirac",
+            "buyer_metric": 40
+        }
+    ],
+    "sellers": [
+        {
+            "company": "JewelsGemstones",
+            "seller_metric": 39
+        },
+        {
+            "company": "ArtByAmelia",
+            "seller_metric": 76
+        },
+        {
+            "company": "Whimsy Woven",
+            "seller_metric": 12
+        },
+        {
+            "company": "Breeze Amber Candles",
+            "seller_metric": 42
+        }
+        ]
+}
