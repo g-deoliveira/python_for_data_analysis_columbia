@@ -1,0 +1,64 @@
+{
+    "buyers": [
+        {
+            "first_name": "John",
+            "last_name": "von Neumann",
+            "member_since": "1923",
+            "date_of_birth": "12-28-1903",
+            "city_of_birth": "Budapest",
+            "country_of_birth": "Hungary",
+            "occupation": "mathematician",
+            "user_name": "jvn",
+            "buyer_id": 1,
+            "buyer_metric": 80,
+            "wish_list": "A"
+        },
+        {
+            "first_name": "Paul",
+            "last_name": "Dirac",
+            "user_name": "dvdhbrt",
+            "member_since": "1921",
+            "date_of_birth": "08-08-1902",
+            "city_of_birth": "Bristol",
+            "country_of_birth": "United Kingdom",
+            "occupation": "mathematician",
+            "buyer_id": 2,
+            "buyer_metric": 40,
+            "wish_list": "B"
+        }
+        ],
+    "sellers": [
+        {
+            "company": "JewelsGemstones",
+            "address": "123 Main St",
+            "city": "New York",
+            "state": "US",
+            "zip_code": "10016",
+            "product_metrics": {"A": 39, "B": 93}
+        },
+        {
+            "company": "ArtByAmelia",
+            "address": "123 Brodway",
+            "city": "New York",
+            "state": "US",
+            "zip_code": "10005",
+            "product_metrics": {"A": 76, "B": 23, "C": 45}
+        },
+        {
+            "company": "Whimsy Woven",
+            "address": "123 East 14th Street",
+            "city": "New York",
+            "state": "US",
+            "zip_code": "10008",
+            "product_metrics": {"C": 12}
+        },
+        {
+            "company": "Breeze Amber Candles",
+            "address": "123 Houston",
+            "city": "New York",
+            "state": "US",
+            "zip_code": "10036",
+            "product_metrics": {"C": 56, "D": 91}
+        }
+        ]
+}
