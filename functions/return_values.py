@@ -11,6 +11,9 @@ assert f() is None
 assert g() is None
 assert h() is None
 
+def func():
+    return "one"
+
 def f(x, y):
     return (
         x,
