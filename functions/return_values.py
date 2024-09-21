@@ -2,7 +2,7 @@ def f():
     return None
 
 def g():
-    return
+    print("hello")
 
 def h():
     pass
