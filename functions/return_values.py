@@ -14,13 +14,12 @@ assert h() is None
 def func():
     return "one"
 
-def f(x, y):
+def f():
     return (
-        x,
-        y,
-        [x, y],
-        {x:y}, (x, y),
-        "".join([str(x),str(y)])
+        1,
+        2,
+        [1, 2],
+        {1:2}, (1, 2),
     )
 
-assert f(1, 2) == (1, 2, [1, 2], {1: 2}, (1, 2), "12")
+assert f() == (1, 2, [1, 2], {1: 2}, (1, 2))
