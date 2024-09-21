@@ -14,6 +14,8 @@ assert h() is None
 def func():
     return "one"
 
+assert func() == "one"
+
 def f():
     return (
         1,
