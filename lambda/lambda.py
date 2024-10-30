@@ -1,4 +1,3 @@
-
 # this lambda function returns the variable:
 lambda x: x
 
