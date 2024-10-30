@@ -8,17 +8,17 @@ def example(x):
 
 # example of an anonymous function:
 items = [
-    (80, 90),
-    (10, 20),
+    (10, 90),
+    (80, 20),
 ]
 items.sort(key=lambda x: x[1])
-assert items == [(10, 20), (80, 90)]
+assert items == [(80, 20), (10, 90)]
 
 # non-anonymous formulation:
 def second_element(x):
     return x[1]
 items.sort(key=second_element, reverse=True)
-assert items == [(80, 90), (10, 20)]
+assert items == [(10, 90), (80, 20)]
 
 # multi-variable lambda function:
 f = lambda x,y: x + y
