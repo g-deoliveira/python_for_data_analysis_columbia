@@ -7,6 +7,6 @@ def subtract(a, b):
 assert add(1, 2) == 3
 assert subtract(1, 2) == -1
 
-output = add + subtract
+output = add(1, 2) + subtract(1, 2)
 
 assert output == 2
