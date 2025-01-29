@@ -11,17 +11,12 @@ assert f() is None
 assert g() is None
 assert h() is None
 
-def func():
+def one():
     return "one"
 
-assert func() == "one"
+assert one() == "one"
 
-def f():
-    return (
-        1,
-        2,
-        [1, 2],
-        {1:2}, (1, 2),
-    )
+def one_and_two():
+    return "one", "two"
 
-assert f() == (1, 2, [1, 2], {1: 2}, (1, 2))
+assert one_and_two() == ("one", "two")
